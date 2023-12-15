@@ -1,0 +1,20 @@
+:root {
+	--container-width: 970px;
+	--container-padding: 10px;
+
+	--font-main: 'MuseoModerno', sans-serif;
+	--font-accent: 'MuseoModerno', serif;
+
+	--page-bg: #fff;
+	--text-color: #000;
+	--accent: #C70101;
+
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}

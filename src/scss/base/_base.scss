@@ -1,0 +1,16 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-main);
+	font-size: 14px;
+}
+
+.btn {
+	border-radius: 5px;
+	background-color: var(--accent);
+	font-weight: 500;
+}
