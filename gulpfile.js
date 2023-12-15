@@ -101,11 +101,11 @@ function scss() {
 };
 
 function images() {
-	return src(['./src/img/**/*', '!./src/img/favicons/*'])
+	return src(['./src/img/**/*'])
 		.pipe(changed(gulpif(isProd, './docs/img/', './build/img/')))
 		.pipe(gulpif(isProd, webp()))
 		.pipe(dest(gulpif(isProd, './docs/img/', './build/img/')))
-		.pipe(gulpif(isProd, src(['./src/img/**/*', '!./src/img/favicons/*'])))
+		.pipe(gulpif(isProd, src(['./src/img/**/*'])))
 		.pipe(gulpif(isProd, changed('./docs/img/')))
 		.pipe(gulpif(isProd, imagemin(imageminOption, { verbose: true })))
 		.pipe(gulpif(isProd, dest('./docs/img/')));
