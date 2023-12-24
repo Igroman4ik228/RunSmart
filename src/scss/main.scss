@@ -8,3 +8,86 @@
 
 /* Blocks */
 @import "./blocks/*.scss";
+
+
+.advantages {
+    margin-top: 70px;
+
+    .container>.title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .row {
+        margin-top: 65px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        .item {
+            max-width: 285px;
+
+            &:not(:first-child) {
+                margin-left: 65px;
+            }
+
+            .img {
+                width: 70px;
+                height: 70px;
+            }
+
+            .title {
+                margin-top: 35px;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            .text {
+                margin-top: 20px;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 18px;
+
+                a {
+                    color: #F00;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
+
+.consultation {
+    margin-top: 67px;
+    background-image: url(../img/consultation/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 108px 0;
+
+    .container>.wrapper {
+
+        color: #FFF;
+
+
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 54px;
+            text-transform: uppercase;
+            width: 800px;
+        }
+
+        .text {
+            margin-top: 8px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            width: 426px;
+        }
+
+    }
+}

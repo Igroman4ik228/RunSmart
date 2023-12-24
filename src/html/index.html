@@ -43,7 +43,6 @@
 	<link rel="stylesheet" href="./fonts/fonts.css" media="print" onload="this.media='all'" />
 
 	<!-- Inline fonts in base64 -->
-
 	<link rel="stylesheet" href="./css/main.css" />
 </head>
 
@@ -51,8 +50,47 @@
 
 	@@include('blocks/header.html')
 	<main class="main">
-		<h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In qui ratione molestias, excepturi tenetur quos,
-			veritatis quae at ut vitae et. Debitis quam in natus omnis sint repellat voluptate ipsum.</h1>
+		<section class="advantages">
+			<div class="container">
+				<h2 class="title">Наши преимущества</h2>
+				<div class="row">
+					<div class="item">
+						<img class="img" src="./img/advantages/cup.svg" alt="cup-img">
+						<h3 class="title">Делимся опытом</h3>
+						<p class="text">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают
+							полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
+					</div>
+					<div class="item">
+						<img class="img" src="./img/advantages/heart.svg" alt="heart-img">
+						<h3 class="title">Заботимся о здоровье</h3>
+						<p class="text">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и
+							были в радость Вам и Вашим близким!</p>
+					</div>
+					<div class="item">
+						<img class="img" src="./img/advantages/shoe.svg" alt="shoe-img">
+						<h3 class="title">Учим бегать</h3>
+						<p class="text">Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в
+							России - <a href="#">I LOVE RUNNING.</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="consultation">
+			<div class="container">
+				<div class="wrapper">
+					<h2 class="title">Получите бесплатную консультацию по подбору пульсометра</h2>
+					<p class="text">Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</p>
+					<form class="form" action="#">
+						<input required placeholder="Ваше имя" type="text" name="name">
+						<input required placeholder="Ваш телефон" type="number" name="phone">
+						<input required placeholder="Ваше Email" type="email" name="email">
+						<button class="btn">заказать консультацию</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
 	</main>
 	@@include('blocks/footer.html')
 
